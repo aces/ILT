@@ -38,7 +38,7 @@
     use      ILT::SceneObject::OneSubObject;
     @ISA =   ( "ILT::OneSubObject" );
 
-    my( $rcsid ) = '$Header: /private-cvsroot/libraries/ILT/ILT/SceneObject/TransformObject.pm,v 1.6 2011-02-04 16:48:14 alex Exp $';
+    my( $rcsid ) = '$Header: /home/users/clepage/CVS/libraries/ILT/ILT/SceneObject/TransformObject.pm,v 1.6 2011/02/04 16:48:14 alex Exp $';
 
 #--------------------------------------------------------------------------
 # define the name of this class

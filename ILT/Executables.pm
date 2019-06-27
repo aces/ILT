@@ -20,7 +20,7 @@
                               &get_executable_list );
     }
 
-    my( $rcsid ) = '$Header: /private-cvsroot/libraries/ILT/ILT/Executables.pm,v 1.5 1998-09-18 13:30:03 david Exp $';
+    my( $rcsid ) = '$Header: /home/users/clepage/CVS/libraries/ILT/ILT/Executables.pm,v 1.5 1998/09/18 13:30:03 david Exp $';
 
 #--------------------------------------------------------------------------
 #  Define all the executables or shell commands used by the library

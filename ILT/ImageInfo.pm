@@ -37,7 +37,7 @@
     use      ILT::Executables;
     use      ILT::LayoutInclude;
 
-    my( $rcsid ) = '$Header: /private-cvsroot/libraries/ILT/ILT/ImageInfo.pm,v 1.6 1998-09-18 13:30:02 david Exp $';
+    my( $rcsid ) = '$Header: /home/users/clepage/CVS/libraries/ILT/ILT/ImageInfo.pm,v 1.6 1998/09/18 13:30:02 david Exp $';
 
 #--------------------------------------------------------------------------
 # define the class of this package

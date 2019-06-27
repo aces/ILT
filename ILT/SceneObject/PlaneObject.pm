@@ -36,7 +36,7 @@
     use      ILT::ProgUtils;
     @ISA =   ( "ILT::SceneObject" );
 
-    my( $rcsid ) = '$Header: /private-cvsroot/libraries/ILT/ILT/SceneObject/PlaneObject.pm,v 1.5 1998-05-22 14:44:45 david Exp $';
+    my( $rcsid ) = '$Header: /home/users/clepage/CVS/libraries/ILT/ILT/SceneObject/PlaneObject.pm,v 1.5 1998/05/22 14:44:45 david Exp $';
 
 #--------------------------------------------------------------------------
 # define the name of the package

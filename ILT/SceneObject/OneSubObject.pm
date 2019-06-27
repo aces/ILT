@@ -38,7 +38,7 @@
     use      ILT::ProgUtils;
     @ISA =   ( "ILT::SceneObject" );
 
-    my( $rcsid ) = '$Header: /private-cvsroot/libraries/ILT/ILT/SceneObject/OneSubObject.pm,v 1.5 2011-02-04 16:48:14 alex Exp $';
+    my( $rcsid ) = '$Header: /home/users/clepage/CVS/libraries/ILT/ILT/SceneObject/OneSubObject.pm,v 1.5 2011/02/04 16:48:14 alex Exp $';
 
 #--------------------------------------------------------------------------
 # the name of this class

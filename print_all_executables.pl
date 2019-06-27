@@ -18,7 +18,7 @@
     use  warnings "all";
     use  ILT::Executables;
 
-    my( $rcsid ) = '$Header: /private-cvsroot/libraries/ILT/print_all_executables.pl,v 1.4 2006-05-05 00:48:25 claude Exp $';
+    my( $rcsid ) = '$Header: /home/users/clepage/CVS/libraries/ILT/print_all_executables.pl,v 1.4 2006/05/05 00:48:25 claude Exp $';
 
     my( @execs, $exec, $actual_path );
 

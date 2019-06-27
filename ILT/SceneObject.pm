@@ -6,7 +6,7 @@
     use      ILT::LayoutUtils;
     use      ILT::ProgUtils;
 
-    my( $rcsid ) = '$Header: /private-cvsroot/libraries/ILT/ILT/SceneObject.pm,v 1.6 2011-02-04 16:48:13 alex Exp $';
+    my( $rcsid ) = '$Header: /home/users/clepage/CVS/libraries/ILT/ILT/SceneObject.pm,v 1.6 2011/02/04 16:48:13 alex Exp $';
 
 my( $this_class ) = "ILT::SceneObject";
 
