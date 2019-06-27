@@ -5,8 +5,6 @@
     use  Carp;
     use  ILT::ProgUtils;
     use  ILT::Executables;
-    use UNIVERSAL qw(isa);
-
 
     BEGIN {
         use Exporter   ();
@@ -61,7 +59,7 @@
                         );
     }
 
-    my( $rcsid ) = '$Header: /private-cvsroot/libraries/ILT/ILT/LayoutUtils.pm,v 1.8 2006-06-20 21:51:11 claude Exp $';
+    my( $rcsid ) = '$Header: /home/users/clepage/CVS/libraries/ILT/ILT/LayoutUtils.pm,v 1.9 2017/07/06 18:10:34 claude Exp $';
 
 #---------------
 

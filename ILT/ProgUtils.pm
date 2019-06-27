@@ -4,8 +4,6 @@
     use  strict;
     use  Carp;
 	use File::Temp qw/ tempdir tempfile /;
-    use UNIVERSAL qw(isa);
-
 
     BEGIN {
         use Exporter   ();
@@ -40,7 +38,7 @@
                         );
     }
 
-    my( $rcsid ) = '$Header: /private-cvsroot/libraries/ILT/ILT/ProgUtils.pm,v 1.3 2011-02-04 16:48:13 alex Exp $';
+    my( $rcsid ) = '$Header: /home/users/clepage/CVS/libraries/ILT/ILT/ProgUtils.pm,v 1.4 2017/07/06 18:10:34 claude Exp $';
 
 #---------------------------  error function
 
@@ -93,7 +91,7 @@ sub  arg_object( $$ )
 {
     my( $obj, $expected_class ) = @_;
 
-    if( !isa( $obj, $expected_class ) )
+    if( !UNIVERSAL::isa( $obj, $expected_class ) )
     {
         fatal_error(
            "Expected an object argument of class: $expected_class\n" );

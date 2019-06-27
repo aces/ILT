@@ -31,7 +31,6 @@
 
     use      strict;
     use      vars  qw(@ISA);
-    use      UNIVERSAL  qw(isa);
 
     use      ILT::LayoutInclude;
     use      ILT::LayoutUtils;
@@ -39,7 +38,7 @@
 
     @ISA = ( "ILT::SceneObject" );
 
-    my( $rcsid ) = '$Header: /private-cvsroot/libraries/ILT/ILT/SceneObject/IntersectionObject.pm,v 1.7 2011-02-04 16:48:14 alex Exp $';
+    my( $rcsid ) = '$Header: /home/users/clepage/CVS/libraries/ILT/ILT/SceneObject/IntersectionObject.pm,v 1.9 2017/07/06 18:26:58 claude Exp $';
 
 #--------------------------------------------------------------------------
 # name of this class
@@ -80,8 +79,8 @@ sub new( $$$ )
 
     bless ($self, $class);
 
-    if( !isa($first_object,"ILT::PlaneObject" ) &&
-        !isa($second_object,"ILT::PlaneObject" ) )
+    if( !UNIVERSAL::isa($first_object,"ILT::PlaneObject" ) &&
+        !UNIVERSAL::isa($second_object,"ILT::PlaneObject" ) )
     {
         fatal_error( "ILT::IntersectionObject->new expects one sub-object to " .
                      " be a plane\n" );
@@ -156,9 +155,9 @@ sub  create_temp_geometry_file( $ )
     # determine which of the 2 sub objects is the PlaneObject
     #--------------------------------------------------------------------------
 
-    if( isa( $self->sub_object(0), "ILT::PlaneObject" ) )
+    if( UNIVERSAL::isa( $self->sub_object(0), "ILT::PlaneObject" ) )
         { $plane_index = 0; }
-    elsif( isa( $self->sub_object(1), "ILT::PlaneObject" ) )
+    elsif( UNIVERSAL::isa( $self->sub_object(1), "ILT::PlaneObject" ) )
         { $plane_index = 1; }
     else
     {

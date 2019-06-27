@@ -34,10 +34,9 @@
     use      ILT::LayoutInclude;
     use      ILT::LayoutUtils;
     use      ILT::ProgUtils;
-    use      UNIVERSAL qw(isa);
     @ISA =   ( "ILT::SceneObject" );
 
-    my( $rcsid ) = '$Header: /private-cvsroot/libraries/ILT/ILT/SceneObject/UnionObject.pm,v 1.7 2011-02-04 16:48:14 alex Exp $';
+    my( $rcsid ) = '$Header: /home/users/clepage/CVS/libraries/ILT/ILT/SceneObject/UnionObject.pm,v 1.9 2017/07/06 18:26:58 claude Exp $';
 
 #--------------------------------------------------------------------------
 # define the name of this class
@@ -79,7 +78,7 @@ sub new( $$@ )
 
     foreach $object ( @sub_objects )
     {
-        if( !isa( $object, "ILT::SceneObject" ) )
+        if( !UNIVERSAL::isa( $object, "ILT::SceneObject" ) )
         {
             fatal_error( "Non SceneObject passed into ${this_class}::new\n" );
         }
